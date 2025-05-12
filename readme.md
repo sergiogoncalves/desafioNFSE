@@ -47,8 +47,6 @@ Cada projeto possui seu próprio `Dockerfile` e pode ser iniciado de forma indep
 
 ### Primeiro uso (onboarding)
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
 docker system prune -a --volumes -f
 docker-compose build --no-cache
 docker-compose up
@@ -85,7 +83,7 @@ npm start
 - Publicação automática de evento em Kafka após consulta
 - Integração completa com Docker e Kafka
 - Testes de unidade e integração
-- Flyway substituído por Liquibase
+- Migrations e inserts automáticos com Liquibase
 
 ### Frontend
 - Tela de consulta de créditos com Angular Material
