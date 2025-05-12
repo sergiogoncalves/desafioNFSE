@@ -1,0 +1,21 @@
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.result-card {
+  overflow-x: auto;
+}

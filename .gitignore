@@ -1,0 +1,63 @@
+# =========================================
+# GLOBAL
+# =========================================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.idea/
+.vscode/
+*.iml
+node_modules/
+dist/
+build/
+target/
+out/
+.env
+*.local
+
+# =========================================
+# FRONTEND (Angular)
+# =========================================
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.npm/
+frontend/package-lock.json
+frontend/yarn.lock
+
+# Optional OS specific
+frontend/.DS_Store
+frontend/Thumbs.db
+
+# =========================================
+# BACKEND (Java Spring Boot)
+# =========================================
+backend/target/
+backend/.mvn/
+backend/.gradle/
+backend/build/
+backend/logs/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/*.iml
+
+# Local environment configs
+backend/*.env
+
+# =========================================
+# DOCKER & COMPOSE
+# =========================================
+**/docker-compose.override.yml
+**/docker-compose.local.yml
+**/.docker/
+
+# =========================================
+# OPTIONAL: test reports
+# =========================================
+**/test-results/
+**/coverage/

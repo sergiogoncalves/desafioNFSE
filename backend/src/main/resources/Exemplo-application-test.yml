@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:14:///testdb
+    username: testuser
+    password: testpass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+  kafka:
+    bootstrap-servers: ${spring.embedded.kafka.brokers:localhost:9092}
+    consumer:
+      group-id: test-group
+      auto-offset-reset: earliest
+  liquibase:
+    enabled: false

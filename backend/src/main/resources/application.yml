@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/creditosdb
+    username: creditosuser
+    password: creditospassword
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 20000
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+  kafka:
+    bootstrap-servers: kafka:9092
